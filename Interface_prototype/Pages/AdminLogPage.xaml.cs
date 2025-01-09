@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace Interface_prototype.Pages
 {
     /// <summary>
-    /// Logika interakcji dla klasy UserLogPage.xaml
+    /// Logika interakcji dla klasy AdminLogPage.xaml
     /// </summary>
-    public partial class UserLogPage : Page
+    public partial class AdminLogPage : Page
     {
-        public UserLogPage()
+        public AdminLogPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void BtnPowrot_Click(object sender, RoutedEventArgs e)
