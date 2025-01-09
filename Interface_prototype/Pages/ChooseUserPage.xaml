@@ -34,7 +34,7 @@
                 <TextBlock HorizontalAlignment="Left" Canvas.Left="31" Canvas.Top="21" VerticalAlignment="Top">
             Panel administratora
                 </TextBlock>
-                <Button Canvas.Left="55" Canvas.Top="158" Content="Logowanie"/>
+                <Button Name="BtnAdminLog" Canvas.Left="55" Canvas.Top="158" Content="Logowanie" Click="BtnAdminLog_Click"/>
             </Canvas>
 
         </Grid>

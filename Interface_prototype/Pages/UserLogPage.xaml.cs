@@ -25,20 +25,19 @@ namespace Interface_prototype.Pages
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void BtnPowrot_Click(object sender, RoutedEventArgs e)
         {
             MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
             mainWindow.MainFrame.Navigate(new Uri("Pages/ChooseUserPage.xaml", UriKind.Relative));
+        }
+
+        private void BtnZatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
+
+            UserWindow userWindow = new UserWindow();
+            userWindow.Show();
+            mainWindow.Close();
         }
     }
 }

@@ -30,5 +30,11 @@ namespace Interface_prototype.Pages
             MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
             mainWindow.MainFrame.Navigate(new Uri("Pages/UserLogPage.xaml", UriKind.Relative));
         }
+
+        private void BtnAdminLog_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
+            mainWindow.MainFrame.Navigate(new Uri("Pages/AdminLogPage.xaml", UriKind.Relative));
+        }
     }
 }

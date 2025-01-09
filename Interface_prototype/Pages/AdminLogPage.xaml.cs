@@ -30,5 +30,16 @@ namespace Interface_prototype.Pages
             MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
             mainWindow.MainFrame.Navigate(new Uri("Pages/ChooseUserPage.xaml", UriKind.Relative));
         }
+
+        private void BtnZatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow? mainWindow = Window.GetWindow(this) as MainWindow;
+
+            AdminWindow adminWindow = new AdminWindow();
+            adminWindow.Show();
+            mainWindow.Close();
+
+            
+        }
     }
 }

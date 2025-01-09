@@ -10,14 +10,14 @@
       Background="DarkOliveGreen">
     <Canvas HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="500" Background="Aquamarine">
         <TextBlock Height="18" Canvas.Left="170" TextWrapping="Wrap" Text="Panel Użytkownika" Width="160" TextAlignment="Center" HorizontalAlignment="Center" Canvas.Top="21" VerticalAlignment="Top"/>
-        <Button Content="Powrót" Height="63" Canvas.Left="539" Canvas.Top="-33" Width="73" Click="Button_Click"/>
+        <Button Name="BtnPowrot"  Content="Powrót" Height="63" Canvas.Left="539" Canvas.Top="-33" Width="73" Click="BtnPowrot_Click"/>
         <Canvas Height="127" Canvas.Left="181" Canvas.Top="71" Width="138" HorizontalAlignment="Center" VerticalAlignment="Top" Background="ForestGreen">
             <PasswordBox Height="30" Canvas.Top="97" Width="138" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBox Height="30" TextWrapping="Wrap" Text="TextBox" Canvas.Top="34" Width="138" HorizontalAlignment="Center" VerticalAlignment="Top" TextChanged="TextBox_TextChanged"/>
+            <TextBox Height="30" TextWrapping="Wrap" Text="TextBox" Canvas.Top="34" Width="138" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock Height="34" TextWrapping="Wrap" Text="TextBlock" Width="138" TextAlignment="Center"/>
             <TextBlock Height="33" TextWrapping="Wrap" Text="TextBlock" Canvas.Top="64" Width="138" TextAlignment="Center"/>
         </Canvas>
-        <Button Name="BtnPowrot" Content="Zatwierdź" Canvas.Left="211" Canvas.Top="221" Height="42" Width="78" Click="BtnPowrot_Click"/>
+        <Button Name="BtnZatwierdz" Content="Zatwierdź" Canvas.Left="211" Canvas.Top="221" Height="42" Width="78" Click="BtnZatwierdz_Click"/>
     </Canvas>
 
 </Page>

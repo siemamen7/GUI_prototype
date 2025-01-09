@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Interface_prototype.Pages
+namespace Interface_prototype
 {
     /// <summary>
     /// Logika interakcji dla klasy UserWindow.xaml
