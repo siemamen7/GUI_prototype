@@ -1,0 +1,44 @@
+﻿<Page x:Class="Interface_prototype.Pages.ChooseUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Interface_prototype.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChooseUserPage"
+      Background="Beige">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="208*"/>
+            <RowDefinition Height="95*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Canvas HorizontalAlignment="Right" Width="170" Margin="0,0,60,0" Background="LightBlue">
+                <TextBlock HorizontalAlignment="Left" Canvas.Left="31" Canvas.Top="20">
+            Panel użytkownika
+                </TextBlock>
+                <Button Name="BtnUserLog" Canvas.Left="49" Canvas.Top="161" Content="Logowanie" Click="BtnUserLog_Click"/>
+            </Canvas>
+            
+            <Canvas Grid.Column="1" HorizontalAlignment="Left" Width="170" Margin="60,0,0,0" Background="LightBlue">
+                <TextBlock HorizontalAlignment="Left" Canvas.Left="31" Canvas.Top="21" VerticalAlignment="Top">
+            Panel administratora
+                </TextBlock>
+                <Button Canvas.Left="55" Canvas.Top="158" Content="Logowanie"/>
+            </Canvas>
+
+        </Grid>
+
+        <TextBlock Width="300" TextAlignment="Center" Grid.Row="1"> System szpitalny X</TextBlock>
+    </Grid>
+</Page>

@@ -6,40 +6,6 @@
         xmlns:local="clr-namespace:Interface_prototype"
         mc:Ignorable="d"
         Title="System Szpitalny X" Height="450" Width="800">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
-            <RowDefinition Height="82*"/>
-            <RowDefinition Height="208*"/>
-            <RowDefinition Height="95*"/>
-        </Grid.RowDefinitions>
-
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            
-            
-
-            <Canvas HorizontalAlignment="Right" Width="170" Margin="0,0,60,0" Background="LightBlue">
-                <TextBlock HorizontalAlignment="Left" Canvas.Left="31" Canvas.Top="20">
-                    Panel użytkownika
-                </TextBlock>
-                <Button Canvas.Left="49" Canvas.Top="161" Content="Logowanie"/>
-
-            </Canvas>
-            <Canvas Grid.Column="1" HorizontalAlignment="Left" Width="170" Margin="60,0,0,0" Background="LightBlue">
-                <TextBlock HorizontalAlignment="Left" Canvas.Left="31" Canvas.Top="21" VerticalAlignment="Top">
-                    Panel administratora
-                </TextBlock>
-                <Button Canvas.Left="55" Canvas.Top="158" Content="Logowanie"/>
-            </Canvas>
-
-        </Grid>
-
-        <TextBlock Width="300" TextAlignment="Center" Grid.Row="1"> System szpitalny X</TextBlock>
-    </Grid>
-
+    <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
 
 </Window>
