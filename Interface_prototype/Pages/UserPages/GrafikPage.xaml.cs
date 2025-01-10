@@ -10,28 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Interface_prototype
+namespace Interface_prototype.Pages.UserPages
 {
     /// <summary>
-    /// Logika interakcji dla klasy AdminWindow.xaml
+    /// Logika interakcji dla klasy GrafikPage.xaml
     /// </summary>
-    public partial class AdminWindow : Window
+    public partial class GrafikPage : Page
     {
-        public AdminWindow()
+        public GrafikPage()
         {
             InitializeComponent();
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void BtnLogOut_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -9,8 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\AdminPages\" />
-    <Folder Include="Pages\UserPages\" />
+    <Folder Include="UserControls\" />
   </ItemGroup>
 
 </Project>

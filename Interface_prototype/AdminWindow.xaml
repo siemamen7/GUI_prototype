@@ -9,10 +9,39 @@
         Background="BlanchedAlmond">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="217*"/>
-            <ColumnDefinition Width="783*"/>
+            <ColumnDefinition Width="247*"/>
+            <ColumnDefinition Width="753*"/>
         </Grid.ColumnDefinitions>
-        <Frame Grid.Column="1" Content="Frame" HorizontalAlignment="Center" Height="564" VerticalAlignment="Center" Width="763"/>
+        <Frame Name="AdminFrame" Grid.Column="1" Margin="10,10,10,10"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Canvas HorizontalAlignment="Center" Height="122" VerticalAlignment="Center" Width="227" Background="CadetBlue"/>
+            <Image Canvas.Left="10" Source="/Images/portret.png" Stretch="Fill" Canvas.Top="10" Margin="21,23,156,55"/>
+            <TextBox Canvas.Left="85" TextWrapping="Wrap" Text="Artur Morgan" Canvas.Top="10" Margin="96,23,19,89" TextAlignment="Center"/>
+
+            <StackPanel HorizontalAlignment="Center" Height="410" VerticalAlignment="Top" Width="198" Margin="0,146,0,0" Grid.RowSpan="2">
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Margin" Value="0, 10, 0, 0"/>
+                    </Style>
+                </StackPanel.Resources>
+                <Button Content="Grafiki" Height="57"/>
+                <Button Content="Pomieszczenia" Height="57"/>
+                <Button Content="Pracownicy" Height="57"/>
+                <Button Content="Pacjenci" Height="57"/>
+                <Button Content="Urlopy" Height="57"/>
+                <Button Content="Mail" Height="57" Background="GreenYellow"/>
+            </StackPanel>
+
+        </Grid>
+        <Button Name="BtnLogOut" Grid.Column="1" Content="Wyloguj" HorizontalAlignment="Left" Height="64" Margin="645,10,0,0" VerticalAlignment="Top" Width="98" Click="BtnLogOut_Click"/>
+
+
+
 
     </Grid>
 </Window>
