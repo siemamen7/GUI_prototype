@@ -33,5 +33,10 @@ namespace Interface_prototype
         {
 
         }
+
+        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

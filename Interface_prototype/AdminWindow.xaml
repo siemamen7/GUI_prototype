@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Interface_prototype"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="600" Width="1000"
+        Title="System Szpitalny X - panel administratora" Height="600" Width="1000"
         Background="BlanchedAlmond">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -39,6 +39,10 @@
 
         </Grid>
         <Button Name="BtnLogOut" Grid.Column="1" Content="Wyloguj" HorizontalAlignment="Left" Height="64" Margin="645,10,0,0" VerticalAlignment="Top" Width="98" Click="BtnLogOut_Click"/>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="27,25,0,0" VerticalAlignment="Top" Width="144" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged_1"/>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="198,25,0,0" VerticalAlignment="Top" Width="145" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="377,25,0,0" VerticalAlignment="Top" Width="143" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Center" Height="387" Margin="0,172,0,0" VerticalAlignment="Top" Width="697"/>
 
 
 
