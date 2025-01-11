@@ -29,17 +29,17 @@
                         <Setter Property="Margin" Value="0, 10, 0, 0"/>
                     </Style>
                 </StackPanel.Resources>
-                <Button Content="Grafiki" Height="57"/>
-                <Button Content="Pomieszczenia" Height="57"/>
-                <Button Content="Pracownicy" Height="57"/>
-                <Button Content="Pacjenci" Height="57"/>
-                <Button Content="Urlopy" Height="57"/>
-                <Button Content="Mail" Height="57" Background="GreenYellow"/>
+                <Button Name="BtnGrafiki" Content="Grafiki" Height="57"/>
+                <Button Name="BtnPomieszczenia" Content="Pomieszczenia" Height="57"/>
+                <Button Name="BtnPracownicy" Content="Pracownicy" Height="57"/>
+                <Button Name="BtnPacjenci" Content="Pacjenci" Height="57"/>
+                <Button Name="BtnUrlopy" Content="Urlopy" Height="57"/>
+                <Button Name="BtnMail" Content="Mail" Height="57" Background="GreenYellow"/>
             </StackPanel>
 
         </Grid>
-        <Button Name="BtnLogOut" Grid.Column="1" Content="Wyloguj" HorizontalAlignment="Left" Height="64" Margin="645,10,0,0" VerticalAlignment="Top" Width="98" Click="BtnLogOut_Click"/>
-        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="27,25,0,0" VerticalAlignment="Top" Width="144" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged_1"/>
+        <Button Name="BtnWyloguj" Grid.Column="1" Content="Wyloguj" HorizontalAlignment="Left" Height="64" Margin="645,10,0,0" VerticalAlignment="Top" Width="98" Click="BtnWyloguj_Click"/>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="27,25,0,0" VerticalAlignment="Top" Width="144" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="198,25,0,0" VerticalAlignment="Top" Width="145" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="121" Margin="377,25,0,0" VerticalAlignment="Top" Width="143" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Center" Height="387" Margin="0,172,0,0" VerticalAlignment="Top" Width="697"/>

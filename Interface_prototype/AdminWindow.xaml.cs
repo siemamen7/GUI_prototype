@@ -24,17 +24,7 @@ namespace Interface_prototype
             InitializeComponent();
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void BtnLogOut_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        private void BtnWyloguj_Click(object sender, RoutedEventArgs e)
         {
 
         }
